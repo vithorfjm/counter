@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+    --backgroundColor: #F6E7D8;
+    --h1Color: #874356;
+    --numberColor: #C65D7B;
+    --buttonColor: #F68989;
+    --pressButton: #ca7070;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundColor);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 35vh;
+}
+
+#container h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--h1Color);
+}
+
+#number {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.3rem;
+    font-weight: 900;
+    color: var(--numberColor);
+}
+
+#btn-container {
+}
+
+.btn {
+    background-color: var(--backgroundColor);
+    border: solid var(--buttonColor) 2px;
+    color: var(--buttonColor);
+    padding: 7px 10px;
+    margin: 7px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--buttonColor);
+    color: var(--backgroundColor);
+}
+
+.btn:active {
+    background-color: var(--pressButton);
+    border: solid var(--pressButton) 2px;
+}
